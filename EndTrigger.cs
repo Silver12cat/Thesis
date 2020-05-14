@@ -37,7 +37,7 @@ public class EndTrigger : MonoBehaviour
     {
         loadingScreen.SetActive(true);
         loadingIcon.SetActive(false);
-        endText.text = "End 2: The Village";
+        //endText.text = "End 2: The Village";
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(mainMenuScene);
         asyncLoad.allowSceneActivation = false;
         while (!asyncLoad.isDone)
@@ -55,6 +55,6 @@ public class EndTrigger : MonoBehaviour
             }
             yield return null;
         }
-        endText.text = " ";
+        //endText.text = " ";
     }
 }
